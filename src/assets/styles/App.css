@@ -1,0 +1,187 @@
+@import 'tailwindcss';
+
+
+:root {
+  /* Colors */
+  --color-basic-white: #ffffff;
+  --color-basic-background: #0c0d0d;
+  --color-netral-25: #fdfdfd;
+  --color-netral-50: #fafafa;
+  --color-netral-100: #f5f5f5;
+  --color-netral-200: #e9eaeb;
+  --color-netral-300: #d5d7da;
+  --color-netral-400: #a4a7ae;
+  --color-netral-500: #717680;
+  --color-netral-600: #535862;
+  --color-netral-700: #414651;
+  --color-netral-800: #252b37;
+  --color-netral-900: #181d27;
+  --color-netral-950: #0a0d12;
+  --color-primer-100: #e5f4fb;
+  --color-primer-200: #6fcfff;
+  --color-primer-300: #0093dd;
+  --color-primer-400: #050a1b;
+
+  /* Custom Breakpoints */
+  --breakpoint-newxs: 383px;
+  --breakpoint-minxs: 394px;
+
+  /* Custom Background Images (Gradients) */
+  --bg-custom-gradient1: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 100%) 0%,
+    rgba(0, 147, 221, 0.2) 100%
+  );
+  --bg-custom-gradient2: linear-gradient(
+    to right,
+    rgba(0, 147, 221, 0%) 0%,
+    rgba(0, 147, 221, 0.2) 100%
+  );
+}
+
+@layer utilities {
+  /* Background Color Utilities */
+  .bg-basic-white {
+    background-color: var(--color-basic-white);
+  }
+  .bg-basic-background {
+    background-color: var(--color-basic-background);
+  }
+  .bg-netral-25 {
+    background-color: var(--color-netral-25);
+  }
+  .bg-netral-50 {
+    background-color: var(--color-netral-50);
+  }
+  .bg-netral-100 {
+    background-color: var(--color-netral-100);
+  }
+  .bg-netral-200 {
+    background-color: var(--color-netral-200);
+  }
+  .bg-netral-300 {
+    background-color: var(--color-netral-300);
+  }
+  .bg-netral-400 {
+    background-color: var(--color-netral-400);
+  }
+  .bg-netral-500 {
+    background-color: var(--color-netral-500);
+  }
+  .bg-netral-600 {
+    background-color: var(--color-netral-600);
+  }
+  .bg-netral-700 {
+    background-color: var(--color-netral-700);
+  }
+  .bg-netral-800 {
+    background-color: var(--color-netral-800);
+  }
+  .bg-netral-900 {
+    background-color: var(--color-netral-900);
+  }
+  .bg-netral-950 {
+    background-color: var(--color-netral-950);
+  }
+  .bg-primer-100 {
+    background-color: var(--color-primer-100);
+  }
+  .bg-primer-200 {
+    background-color: var(--color-primer-200);
+  }
+  .bg-primer-300 {
+    background-color: var(--color-primer-300);
+  }
+  .bg-primer-400 {
+    background-color: var(--color-primer-400);
+  }
+
+  /* Text Color Utilities */
+  .text-basic-white {
+    color: var(--color-basic-white);
+  }
+  .text-netral-25 {
+    color: var(--color-netral-25);
+  }
+  .text-netral-50 {
+    color: var(--color-netral-50);
+  }
+  .text-netral-100 {
+    color: var(--color-netral-100);
+  }
+  .text-netral-200 {
+    color: var(--color-netral-200);
+  }
+  .text-netral-300 {
+    color: var(--color-netral-300);
+  }
+  .text-netral-400 {
+    color: var(--color-netral-400);
+  }
+  .text-netral-500 {
+    color: var(--color-netral-500);
+  }
+  .text-netral-600 {
+    color: var(--color-netral-600);
+  }
+  .text-netral-700 {
+    color: var(--color-netral-700);
+  }
+  .text-netral-800 {
+    color: var(--color-netral-800);
+  }
+  .text-netral-900 {
+    color: var(--color-netral-900);
+  }
+  .text-netral-950 {
+    color: var(--color-netral-950);
+  }
+  .text-primer-100 {
+    color: var(--color-primer-100);
+  }
+  .text-primer-200 {
+    color: var(--color-primer-200);
+  }
+  .text-primer-300 {
+    color: var(--color-primer-300);
+  }
+  .text-primer-400 {
+    color: var(--color-primer-400);
+  }
+
+  /* Border Color Utilities */
+  .border-netral-700 {
+    border-color: var(--color-netral-700);
+  }
+  .border-primer-300 {
+    border-color: var(--color-primer-300);
+  }
+
+  /* Opacity Variants for Background Colors */
+  .bg-netral-900\/30 {
+    background-color: rgb(from var(--color-netral-900) r g b / 0.3);
+  }
+
+  /* Background Image Utilities */
+  .bg-custom-gradient1 {
+    background-image: var(--bg-custom-gradient1);
+  }
+  .bg-custom-gradient2 {
+    background-image: var(--bg-custom-gradient2);
+  }
+
+  /* Custom Breakpoint Utilities */
+  @media (min-width: 383px) {
+    .newxs\:block {
+      display: block;
+    }
+    .min-w-screen-newxs {
+      min-width: 100vw;
+    }
+  }
+  @media (min-width: 394px) {
+    .minxs\:block {
+      display: block;
+    }
+  }
+}
